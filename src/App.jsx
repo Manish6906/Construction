@@ -1,4 +1,5 @@
-import FirstSection from "./Components/HomePage/FirstSection"
+import FirstSection from "./Components/TopSectionPage/FirstSection"
+import SecondSection from "./Components/TopSectionPage/SecondSection"
 
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <>
-      <FirstSection />
+      {/* <FirstSection /> */}
+      <SecondSection />
     </>
   )
 }
