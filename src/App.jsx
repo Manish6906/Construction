@@ -1,3 +1,4 @@
+import FirstSection from "./Components/HomePage/FirstSection"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <>
-      
+      <FirstSection />
     </>
   )
 }
