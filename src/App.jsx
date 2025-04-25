@@ -1,8 +1,6 @@
 import Navbar from "./Components/Navbar/Navbar"
-import FirstSection from "./Components/ServicePage/FirstSection"
 import FullSection from "./Components/ServicePage/FullSection"
-import RightSection from "./Components/ServicePage/RightSection"
-
+import FirstSection from "./Components/TopSectionPage/FirstSection"
 
 
 function App() {
@@ -11,7 +9,11 @@ function App() {
   return (
     <>
       <Navbar />
+    <FirstSection />
+
     <FullSection />
+   
+     
     </>
   )
 }
