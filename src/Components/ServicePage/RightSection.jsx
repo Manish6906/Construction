@@ -11,18 +11,18 @@ const features = [
 
 function RightSection() {
   return (
-    <section className="p-6 md:p-12"> {/* Increased padding */}
-      <div className="flex gap-2 items-center justify-center md:justify-start text-[#EF8D2A] mb-4"> {/* Increased gap and margin */}
+    <section className="p-6 py-10  lg:pr-18 xl:pr-22"> {/* Increased padding */}
+      <div className="flex  items-center justify-center md:justify-start text-[#EF8D2A] mb-4"> {/* Increased gap and margin */}
         <MdOutlineHorizontalRule className="text-4xl" /> {/* Increased icon size */}
         <p className="text-2xl md:text-4xl font-semibold">Why Choose Us</p> {/* Increased text size */}
       </div>
 
-      <h1 className="text-2xl md:text-5xl font-bold mb-6 leading-7 text-center md:text-start md:leading-16"> {/* Increased font size */}
-        Unmatched Reliability <br />
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-4 leading-7 text-center md:text-start md:leading-10 lg:leading-12"> {/* Increased font size */}
+        Unmatched Reliability 
         for Every Project.
       </h1>
 
-      <p className="text-gray-600 mb-8 max-w-2xl text-lg leading-10"> {/* Increased margin and text size */}
+      <p className="text-gray-600 mb-3 lg:mb-7 max-w-2xl text-lg leading-8 px"> {/* Increased margin and text size */}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis gravida ante, 
         quis pulvinar odio commodo efficitur. Donec nec sem at eros porta finibus eu et felis. 
         Cras quis libero eu ex euismod tempor. Aliquam eu justo quis nisl euismod vestibulum non quis odio.
@@ -36,7 +36,7 @@ function RightSection() {
           </li>
         ))}
       </ul>
- <button className='text-center flex items-center  text-white mt-5 md:mt-10 gap-4 bg-[#141414] py-2 px-4 md:px-10'>
+ <button className='text-center flex items-center  cursor-pointer hover:bg-[#2f2c2c] text-white mt-5 md:mt-10 gap-4 bg-[#141414] py-2 px-4 md:px-10'>
     Learn More  <FaArrowRight />
   </button>
 

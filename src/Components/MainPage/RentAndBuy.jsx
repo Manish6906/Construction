@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Star } from 'lucide-react';
+import { FaStar } from "react-icons/fa";
 import image5 from '../../assets/images/image5.png';
 import image7 from '../../assets/images/image7.png';
 import image9 from '../../assets/images/image9.png';
 import image4 from '../../assets/images/image4.png';
 import image8 from '../../assets/images/image8.png';
 import image6 from '../../assets/images/image6.png';
-
+import { MdOutlineHorizontalRule } from "react-icons/md";
 // Equipment list data
 const equipmentList = [
   {
@@ -54,7 +54,7 @@ function StarRating() {
   return (
     <div className="flex items-center gap-1 mb-2 text-[#EF8D2A] cursor-pointer">
       {[...Array(5)].map((_, i) => (
-        <Star
+        <FaStar 
           key={i}
           onClick={() => setRating(i + 1)}
           className={`w-5 h-5 ${i < rating ? 'fill-[#EF8D2A] stroke-[#EF8D2A]' : 'stroke-[#EF8D2A]'}`}
@@ -68,7 +68,10 @@ function RentAndBuy() {
   return (
     <div className="px-4 py-10 max-w-7xl mx-auto">
       <div className="text-center mb-10">
-        <h2 className="text-xl text-[#EF8D2A] font-semibold">Rent or Buy</h2>
+     <div className='flex items-center justify-center'>
+     <MdOutlineHorizontalRule className='text-4xl' />
+     <h2 className="text-xl text-[#EF8D2A] font-semibold"> Rent or Buy</h2>
+     </div>
 
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Flexible Options, Maximum Power.</h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
@@ -83,12 +86,12 @@ function RentAndBuy() {
           return (
             <div
               key={index}
-              className="bg-white shadow-xl rounded-xl p-6 hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+              className="bg-white shadow-2xl  p-6 hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
             >
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-40 object-contain rounded-md mb-4 transition-transform duration-300 hover:scale-110"
+                className="w-full h-40 object-contain rounded-md mb-4 "
               />
 
               <hr className="border-t-2 border-[#EF8D2A] my-4" />
@@ -99,14 +102,14 @@ function RentAndBuy() {
               <h2 className="text-xl font-semibold text-black transition duration-200">
                 {item.title}
               </h2>
-              <p className="text-gray-600">{item.description}</p>
+              <p className="text-gray-600">{item.description}</p>   
 
-              <div className="flex justify-between items-center mt-4">
+              <div className="md:flex justify-between items-center mt-4">
                 <p className="text-lg font-semibold">
                   <span className="text-[#EF8D2A]">{amount}</span>
                   <span className="text-black">/{unit}</span>
                 </p>
-                <button className="bg-black text-white px-12 py-1  cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
+                <button className="bg-black text-white px-12 py-1 mt-2 md:mt-0  cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
                   Rental Now
                 </button>
               </div>

@@ -28,7 +28,7 @@ function SecondSection() {
             and top-tier service, delivering exceptional results every time.
           </h2>
 
-          <button className="bg-black text-white py-2 px-8 rounded inline-flex items-center gap-2 hover:bg-gray-800 transition">
+          <button className="bg-black text-white py-2 cursor-pointer px-8 rounded inline-flex items-center gap-2 hover:bg-gray-800 transition">
             Learn More <ArrowRight size={18} />
           </button>
         </div>

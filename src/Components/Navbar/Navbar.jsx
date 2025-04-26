@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from '../../assets/images/Logo.png';
-
+import { FaArrowRight } from "react-icons/fa";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#141414] text-white shadow-md">
+    <nav className="bg-[#141414] text-white shadow-md sticky top-0 z-50">
       <div className="mx-auto px-4 sm:px-6 lg:px-20 py-3">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -35,9 +35,10 @@ const Navbar = () => {
           </div>
 
           {/* Appointment Button */}
-          <button className="hidden md:block px-6 py-2 bg-[#EF8D2A] rounded-sm hover:bg-[#e67e10] transition-colors">
-            Make Appointment
-          </button>
+          <button className="hidden md:flex items-center gap-2 px-6 py-2 bg-[#EF8D2A] rounded-sm hover:bg-[#e67e10] transition-colors">
+  Make Appointment <FaArrowRight />
+</button>
+
 
           {/* Mobile Hamburger */}
           <div className="md:hidden">
@@ -81,8 +82,8 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button className="w-full bg-[#EF8D2A] px-4 py-2 rounded-md hover:bg-[#e67e10] transition-colors">
-            Make Appointment
+          <button className="w-full bg-[#EF8D2A] px-4 py-2 flex items-center gap-2 rounded-md hover:bg-[#e67e10] transition-colors">
+            Make Appointment<FaArrowRight />
           </button>
         </div>
       )}

@@ -5,7 +5,7 @@ import RightSection from './RightSection'
 function FullSection() {
   return (
     <div>
-      <div className='md:flex justify-center items-center'>
+      <div className='md:flex justify-center md:mt-15 '>
         <FirstSection />
         <RightSection />
       </div>
