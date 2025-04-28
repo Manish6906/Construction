@@ -15,14 +15,6 @@ function App() {
 
   return (
     <>
-<<<<<<< HEAD
-      {/* <Navbar />
-<SecondSection />
-    <FullSection />
-    <RentAndBuy />
-    <AboutSection /> */}
-    <ChooseQuality />
-=======
     <BrowserRouter>
       
       <Navbar />
@@ -33,7 +25,6 @@ function App() {
       <FourthSection />
     </BrowserRouter>
       
->>>>>>> e9b0bb47341585b7cf57781065ca401724da3036
    
      
     </>
