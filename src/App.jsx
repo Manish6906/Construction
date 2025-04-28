@@ -1,4 +1,5 @@
 import AboutSection from "./Components/MainPage/AboutSection"
+import ChooseQuality from "./Components/MainPage/ChooseQuality"
 import RentAndBuy from "./Components/MainPage/RentAndBuy"
 import Testimonials from "./Components/MainPage/Testimonials"
 import Navbar from "./Components/Navbar/Navbar"
@@ -12,11 +13,12 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
 <SecondSection />
     <FullSection />
     <RentAndBuy />
-    <AboutSection />
+    <AboutSection /> */}
+    <ChooseQuality />
    
      
     </>
