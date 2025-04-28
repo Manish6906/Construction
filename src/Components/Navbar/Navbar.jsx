@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from '../../assets/images/Logo.png';
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -18,7 +19,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img src={logo} alt="Logo" className="h-10 w-auto" />
+          <Link to="/">
+          <img src={logo} alt="Logo" className="h-10 w-auto" />
+          </Link>
           </div>
 
           {/* Desktop Menu */}
