@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from '../../assets/images/Logo.png';
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -18,7 +19,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img src={logo} alt="Logo" className="h-10 w-auto" />
+          <Link to="/">
+          <img src={logo} alt="Logo" className="h-10 w-auto" />
+          </Link>
           </div>
 
           {/* Desktop Menu */}
@@ -35,7 +38,7 @@ const Navbar = () => {
           </div>
 
           {/* Appointment Button */}
-          <button className="hidden md:flex items-center gap-2 px-6 py-2 bg-[#EF8D2A] rounded-sm hover:bg-[#e67e10] transition-colors">
+          <button className="hidden md:flex items-center gap-2 px-6 py-2 cursor-pointer bg-[#EF8D2A] rounded-sm hover:bg-[#e67e10] transition-colors">
   Make Appointment <FaArrowRight />
 </button>
 
@@ -82,7 +85,7 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button className="w-full bg-[#EF8D2A] px-4 py-2 flex items-center gap-2 rounded-md hover:bg-[#e67e10] transition-colors">
+          <button className="w-full bg-[#EF8D2A] px-4 cursor-pointer py-2 flex items-center gap-2 rounded-md hover:bg-[#e67e10] transition-colors">
             Make Appointment<FaArrowRight />
           </button>
         </div>

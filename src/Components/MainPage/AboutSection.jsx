@@ -3,7 +3,7 @@ import firstImage from '../../assets/images/firstImage.png';
 import secondImage from '../../assets/images/secondImage.png';
 import { MdOutlineHorizontalRule } from 'react-icons/md';
 import { ArrowRight } from 'lucide-react';
-
+import CountUp from 'react-countup';
 function AboutSection() {
   return (
     <div className="py-10 px-4 sm:px-8 md:px-16 lg:px-20">
@@ -22,7 +22,8 @@ function AboutSection() {
             {/* Box Section */}
             <div className="w-full md:w-1/2 text-center">
               <div className="px-5 py-4 border-b-2 border-r-2 border-gray-300">
-                <h2 className="text-2xl lg:text-5xl font-extrabold text-[#EF8D2A]">15+</h2>
+              <CountUp end={15} duration={2.5} suffix="+" className='text-2xl lg:text-5xl font-extrabold text-[#EF8D2A]' />
+                {/* <h2 className="text-2xl lg:text-5xl font-extrabold text-[#EF8D2A]">15+</h2> */}
                 <p>Years of </p>
                 <span>Excellence</span>
               </div>
@@ -49,7 +50,7 @@ function AboutSection() {
           </div>
 
           <div className='flex justify-center md:justify-start mt-5'>
-          <button className="bg-black text-white py-2 px-6 md:px-15 xl:px-27 inline-flex items-center gap-2 hover:bg-gray-800 transition">
+          <button className="bg-black cursor-pointer text-white py-2 px-6 md:px-15 xl:px-27 inline-flex items-center gap-2 hover:bg-gray-800 transition">
             Learn More <ArrowRight size={18} />
           </button>
           </div>
