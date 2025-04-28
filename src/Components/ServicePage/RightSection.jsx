@@ -11,7 +11,7 @@ const features = [
 
 function RightSection() {
   return (
-    <section className="p-6 py-10  lg:pr-18 xl:pr-22"> {/* Increased padding */}
+    <section className="p-6 py-10  "> {/* Increased padding */}
       <div className="flex  items-center justify-center md:justify-start text-[#EF8D2A] mb-4"> {/* Increased gap and margin */}
         <MdOutlineHorizontalRule className="text-4xl" /> {/* Increased icon size */}
         <p className="text-2xl md:text-4xl font-semibold">Why Choose Us</p> {/* Increased text size */}

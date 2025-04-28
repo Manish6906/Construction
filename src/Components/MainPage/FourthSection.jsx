@@ -17,7 +17,7 @@ function FourthSection() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
 
           {/* Left: Counters */}
-          <div className="flex flex-wrap md:flex-nowrap gap-8 items-center">
+          <div className="flex justify-center md:justify-start flex-wrap md:flex-nowrap gap-8 items-center">
             <div className="text-center md:text-left">
               <h1 className="text-5xl font-bold">
                 <CountUp end={98} duration={2} suffix="%" />
@@ -40,12 +40,14 @@ function FourthSection() {
 
           {/* Right: Description */}
           <div className="flex flex-col max-w-3xl text-center md:text-left">
-            <MdOutlineHorizontalRule className="text-4xl mb-2 mx-auto md:mx-0" />
-            <h3 className="text-lg uppercase text-[#EF8D2A] mb-2">Who We Are</h3>
-            <h1 className="text-4xl font-bold leading-tight mb-4">
+            <div className='flex items-center justify-center md:justify-start'>
+            <MdOutlineHorizontalRule className="text-4xl mb-2 " />
+            <h3 className="text-lg uppercase text-[#EF8D2A] mb-2 xl:text-2xl font-semibold">Who We Are</h3>
+            </div>
+            <h1 className="text-4xl font-bold leading-tight mb-4 xl:text-6xl">
               Experts in Heavy Equipment Solutions.
             </h1>
-            <p className="text-gray-300 text-base">
+            <p className="text-gray-300 text-base xl:text-xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis gravida ante,
               quis porta mauris. Integer fermentum ligula in nunc hendrerit, at iaculis lorem
               tincidunt.
