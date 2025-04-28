@@ -69,14 +69,14 @@ function Testimonials() {
       {/* Heading Section (Pushed down slightly using mt-10) */}
       <div className="flex flex-col md:flex-row justify-between items-center mb-6 mt-10">
         <div className="md:w-1/2 text-center md:text-left">
-        <div className='flex items-center'>
+        <div className='flex justify-center items-center md:justify-start'>
         <MdOutlineHorizontalRule className='text-3xl' />
         <h3 className="text-[#EF8D2A] text-lg font-semibold mb-1">Testimonials</h3>
         </div>
   
           {/* Added Line Below the Heading */}
           
-          <h1 className="text-5xl font-bold text-black mb-2">Client Confidence Speaks.</h1>
+          <h1 className="text-2xl lg:text-5xl font-bold text-black mb-2">Client Confidence Speaks.</h1>
         </div>
         <div className="md:w-1/2 text-gray-800 text-center md:text-start mt-4 md:mt-0">
           <p>
