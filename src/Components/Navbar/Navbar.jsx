@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import logo from '../../assets/images/Logo.png';
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll"; // Importing ScrollLink from react-scroll
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
-    { name: "HOME", href: "#" },
-    { name: "ABOUT", href: "#" },
-    { name: "SERVICE", href: "#" },
-    { name: "CONTACT", href: "#" },
+    { name: "HOME", to: "test1" },
+    { name: "CHOOSE US", to: "test2" },
+    { name: "ABOUT US", to: "test3" },
+    { name: "TESTIMONIALS", to: "test4" },
   ];
 
   return (
@@ -19,29 +20,32 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-          <Link to="/">
-          <img src={logo} alt="Logo" className="h-10 w-auto" />
-          </Link>
+            <a href="/">
+              <img src={logo} alt="Logo" className="h-10 w-auto" />
+            </a>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6 xl:space-x-20">
             {navLinks.map((link) => (
-              <a
+              <ScrollLink
                 key={link.name}
-                href={link.href}
-                className="hover:text-[#EF8D2A]  font-medium"
+                to={link.to}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={200}
+                className="hover:text-[#EF8D2A] cursor-pointer font-medium"
               >
                 {link.name}
-              </a>
+              </ScrollLink>
             ))}
           </div>
 
           {/* Appointment Button */}
           <button className="hidden md:flex items-center gap-2 px-6 py-2 cursor-pointer bg-[#EF8D2A] rounded-sm hover:bg-[#e67e10] transition-colors">
-  Make Appointment <FaArrowRight />
-</button>
-
+            Make Appointment <FaArrowRight />
+          </button>
 
           {/* Mobile Hamburger */}
           <div className="md:hidden">
@@ -77,16 +81,20 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-3">
           {navLinks.map((link) => (
-            <a
+            <ScrollLink
               key={link.name}
-              href={link.href}
+              to={link.to}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={200}
               className="block text-white hover:text-[#EF8D2A] transition-colors"
             >
               {link.name}
-            </a>
+            </ScrollLink>
           ))}
           <button className="w-full bg-[#EF8D2A] px-4 cursor-pointer py-2 flex items-center gap-2 rounded-md hover:bg-[#e67e10] transition-colors">
-            Make Appointment<FaArrowRight />
+            Make Appointment <FaArrowRight />
           </button>
         </div>
       )}

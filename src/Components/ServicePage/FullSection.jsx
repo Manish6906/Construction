@@ -4,7 +4,7 @@ import RightSection from './RightSection'
 
 function FullSection() {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-10 px-4 md:px-20 py-10">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-10 px-4 md:px-20 py-10" id='test2'>
       <FirstSection />
       <RightSection />
     </div>

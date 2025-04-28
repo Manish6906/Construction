@@ -7,7 +7,7 @@ function SecondSection() {
   return (
     <div
       className="relative bg-cover bg-center w-full py-12"
-      style={{ backgroundImage: `url(${image1})` }}
+      style={{ backgroundImage: `url(${image1})` }} id='test1'
     >
       <div className=" flex flex-col md:flex-row items-center justify-between px-6 md:px-12">
 

@@ -8,6 +8,7 @@ import FullSection from "./Components/ServicePage/FullSection"
 import SecondSection from "./Components/TopSectionPage/SecondSection"
 import FourthSection from "./Components/MainPage/FourthSection"
 import LastSection from "./Components/MainPage/LastSection"
+import Footer from "./Components/Footer/Footer"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <BrowserRouter>
       
       <Navbar />
+      
 <SecondSection />
     <FullSection />
     <RentAndBuy />
@@ -28,6 +30,7 @@ function App() {
       <Testimonials />
       <ChooseQuality />
       <LastSection />
+      <Footer />
     </BrowserRouter>
       
    
