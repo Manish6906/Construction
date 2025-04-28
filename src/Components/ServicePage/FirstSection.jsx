@@ -41,7 +41,7 @@ const Card = ({ image, title, text, }) => (
 
 function FirstSection() {
   return (
-    <div className='py-10 px-4  lg:px-10'>
+    <div className='py-10 px-4 '>
       <div className='grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2  justify-items-center'>
         {cards.map((card, index) => (
           <Card key={index} {...card} />
