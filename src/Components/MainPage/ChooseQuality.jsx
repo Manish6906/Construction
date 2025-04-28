@@ -20,7 +20,7 @@ function ChooseQuality() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
-            <button className="bg-[#EF8D2C] text-white px-6 py-2 flex items-center gap-2 mt-4">
+            <button className="bg-[#EF8D2C] text-white cursor-pointer px-6 py-2 flex items-center gap-2 mt-4">
               Contact Us Now
               <span className="text-xl">➔</span>
             </button>
@@ -29,8 +29,8 @@ function ChooseQuality() {
 
         {/* Bottom Center Image */}
         <div className="absolute left-1/2 xl:left-2/3 top-8/9 transform -translate-x-1/2 xl:-translate-x-2/3 -translate-y-1/2 w-full flex justify-center">
-  <img src={image11} alt="image11" className="h-auto w-3/4 sm:w-2/3 md:w-7/8 lg:w-auto" />
-</div>
+       <img src={image11} alt="image11" className="h-auto w-3/4 sm:w-2/3 md:w-7/8 lg:w-auto" />
+        </div>
 
       </div>
     </>
