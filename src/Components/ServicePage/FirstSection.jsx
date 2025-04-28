@@ -1,7 +1,9 @@
 import React from 'react';
+import { FaArrowRight } from "react-icons/fa";
 import card1 from '../../assets/images/card1.png';
 import card2 from '../../assets/images/card2.png';
-import card3 from '../../assets/images/card3.png';
+import card3 from '../../assets/images/card4.png';
+import card4 from '../../assets/images/card3.png';
 
 const cards = [
   {
@@ -19,29 +21,30 @@ const cards = [
     title: 'Excavator',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.',
   },
+  {
+    image: card4,
+    title: 'Excavator',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.',
+  },
 ];
 
-const Card = ({ image, title, text, customClass = '' }) => (
-  <div className={`max-w-sm bg-[#F7F7F7] text-black px-4 py-4 shadow-xl rounded-xl transition-transform hover:scale-105 ${customClass}`}>
-    <img src={image} alt={title} className=' w-40 h-28' /> {/* Reduced margin-bottom */}
-    <h2 className='text-xl font-bold mb-2'>{title}</h2>
-    <p className='mb-3 text-sm'>{text}</p> {/* Reduced margin-bottom */}
-    <a href='#' className='text-[#EF8D2A] font-medium hover:underline'>
-      Learn More
+const Card = ({ image, title, text, }) => (
+  <div className={`w-full max-w-sm bg-[#F7F7F7] text-black px-6 py-6 md:px-4 shadow-2xl `}>
+    <img src={image} alt={title} className='w-full h-32 object-contain mb-4' />
+    <h2 className='text-sm lg:text-xl font-bold mb-2'>{title}</h2>
+    <p className='mb-3  md:mb-1 text-[10px] lg:text-sm'>{text}</p>
+    <a href='#' className='text-[#EF8D2A] flex items-center gap-1 lg:gap-2 text-sm lg:text-xl font-medium hover:underline'>
+      Learn More <FaArrowRight className='text-[10px] lg:text-sm' />
     </a>
   </div>
 );
 
 function FirstSection() {
   return (
-    <div className='py-8 px-4 md:px-10'> {/* Reduced vertical padding */}
-      <div className='flex flex-col gap-6'> {/* Reduced gap between cards */}
+    <div className='py-10 px-4  lg:px-10'>
+      <div className='grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2  justify-items-center'>
         {cards.map((card, index) => (
-          <Card
-            key={index}
-            {...card}
-            customClass={index === 1 ? ' md:ml-24' : ''}
-          />
+          <Card key={index} {...card} />
         ))}
       </div>
     </div>

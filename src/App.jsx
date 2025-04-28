@@ -1,9 +1,10 @@
-import FourthSection from "./Components/MainPage/FourthSection"
+import AboutSection from "./Components/MainPage/AboutSection"
 import RentAndBuy from "./Components/MainPage/RentAndBuy"
 import Testimonials from "./Components/MainPage/Testimonials"
 import Navbar from "./Components/Navbar/Navbar"
 import FullSection from "./Components/ServicePage/FullSection"
 import FirstSection from "./Components/TopSectionPage/FirstSection"
+import SecondSection from "./Components/TopSectionPage/SecondSection"
 
 
 function App() {
@@ -12,15 +13,10 @@ function App() {
   return (
     <>
       <Navbar />
-    <FirstSection />
-
+<SecondSection />
     <FullSection />
-
     <RentAndBuy />
-    <Testimonials />
-    <FourthSection />
-
-
+    <AboutSection />
    
      
     </>
