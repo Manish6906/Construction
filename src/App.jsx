@@ -8,6 +8,7 @@ import FullSection from "./Components/ServicePage/FullSection"
 import FirstSection from "./Components/TopSectionPage/FirstSection"
 import SecondSection from "./Components/TopSectionPage/SecondSection"
 import FourthSection from "./Components/MainPage/FourthSection"
+import LastSection from "./Components/MainPage/LastSection"
 
 
 function App() {
@@ -15,14 +16,8 @@ function App() {
 
   return (
     <>
-<<<<<<< HEAD
-      {/* <Navbar />
-<SecondSection />
-    <FullSection />
-    <RentAndBuy />
-    <AboutSection /> */}
-    <ChooseQuality />
-=======
+     
+   
     <BrowserRouter>
       
       <Navbar />
@@ -31,9 +26,10 @@ function App() {
     <RentAndBuy />
     <AboutSection />
       <FourthSection />
+      <ChooseQuality />
+      <LastSection />
     </BrowserRouter>
       
->>>>>>> e9b0bb47341585b7cf57781065ca401724da3036
    
      
     </>
