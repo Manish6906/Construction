@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import CountUp from 'react-countup';
 function AboutSection() {
   return (
-    <div className="py-10 px-4 sm:px-8 md:px-16 lg:px-20">
+    <div className="py-10 px-4 sm:px-8 md:px-16 lg:px-20" id='test3'>
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Left section */}
         <div className="w-full md:w-1/2 space-y-2 ">
