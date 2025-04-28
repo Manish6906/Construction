@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes } from "react-router-dom"
 import AboutSection from "./Components/MainPage/AboutSection"
+import ChooseQuality from "./Components/MainPage/ChooseQuality"
 import RentAndBuy from "./Components/MainPage/RentAndBuy"
 import Testimonials from "./Components/MainPage/Testimonials"
 import Navbar from "./Components/Navbar/Navbar"
@@ -14,6 +15,14 @@ function App() {
 
   return (
     <>
+<<<<<<< HEAD
+      {/* <Navbar />
+<SecondSection />
+    <FullSection />
+    <RentAndBuy />
+    <AboutSection /> */}
+    <ChooseQuality />
+=======
     <BrowserRouter>
       
       <Navbar />
@@ -24,6 +33,7 @@ function App() {
       <FourthSection />
     </BrowserRouter>
       
+>>>>>>> e9b0bb47341585b7cf57781065ca401724da3036
    
      
     </>
