@@ -27,7 +27,7 @@ function LastSection() {
   };
 
   return (
-    <div className="p-5 md:flex items-center justify-center gap-10">
+    <div className="p-5 md:flex items-center justify-evenly gap-10 sm:mt-20 md:mt-30 lg:mt-70">
 
       {/* Left Section */}
       <div className="relative">
