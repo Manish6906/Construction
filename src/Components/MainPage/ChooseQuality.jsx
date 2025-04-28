@@ -28,7 +28,7 @@ function ChooseQuality() {
         </div>
 
         {/* Bottom Center Image */}
-        <div className="absolute left-1/2 xl:left-5/6 top-8/9 transform -translate-x-1/2 xl:-translate-x-3/4 -translate-y-1/2 w-full flex justify-center">
+        <div className="absolute left-1/2 xl:left-2/3 top-8/9 transform -translate-x-1/2 xl:-translate-x-2/3 -translate-y-1/2 w-full flex justify-center">
   <img src={image11} alt="image11" className="h-auto w-3/4 sm:w-2/3 md:w-7/8 lg:w-auto" />
 </div>
 
