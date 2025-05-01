@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import footer from '../../assets/images/footerimg.png';
 import logo from '../../assets/images/Logo.png';
 import { FaArrowRight } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { CiYoutube } from "react-icons/ci";
-
+import { Link } from 'react-scroll';
 function Footer() {
   return (
     <div>
@@ -33,23 +32,42 @@ function Footer() {
             <div>
               <h2 className='text-lg font-bold mb-4 text-[#EF8D2A]'>About Us</h2>
               <p className='mb-4 font-semibold'>We are committed to providing the best services to our customers. Our team is dedicated to excellence in every project we undertake.</p>
-              <div className='flex space-x-4'>
+              {/* <div className='flex space-x-4'>
                 <a href="#" target='_blank' className='text-white bg-[#EF8D2A] p-2 rounded-sm hover:bg-[#e67e10] transition-colors'><FaFacebook /></a>
                 <a href="#" target='_blank' className='text-white bg-[#EF8D2A] p-2 rounded-sm hover:bg-[#e67e10] transition-colors'><CiYoutube /></a>
                 <a href="#" target='_blank' className='text-white bg-[#EF8D2A] p-2 rounded-sm hover:bg-[#e67e10] transition-colors'><FaInstagram /></a>
-              </div>
+              </div> */}
             </div>
 
             {/* Extra Links Section */}
-            <div>
-              <h2 className='text-lg font-bold mb-4 text-[#EF8D2A]'>Extra Links</h2>
-              <ul className='space-y-2 font-semibold'>
-                <li><Link to="/about" className='text-white hover:text-[#EF8D2A]'>About Us</Link></li>
-                <li><Link to="/services" className='text-white hover:text-[#EF8D2A]'>Services</Link></li>
-                <li><Link to="/team" className='text-white hover:text-[#EF8D2A]'>Team</Link></li>
-                <li><Link to="/career" className='text-white hover:text-[#EF8D2A]'>Career</Link></li>
-              </ul>
-            </div>
+           
+
+<div>
+  <h2 className='text-lg font-bold mb-4 text-[#EF8D2A]'>Extra Links</h2>
+  <ul className='space-y-2 font-semibold'>
+    <li>
+      <Link to="test1" smooth={true} duration={500} className='cursor-pointer text-white hover:text-[#EF8D2A]'>
+        HOME
+      </Link>
+    </li>
+    <li>
+      <Link to="test2" smooth={true} duration={500} className='cursor-pointer text-white hover:text-[#EF8D2A]'>
+        CHOOSE US
+      </Link>
+    </li>
+    <li>
+      <Link to="test3" smooth={true} duration={500} className='cursor-pointer text-white hover:text-[#EF8D2A]'>
+        ABOUT US
+      </Link>
+    </li>
+    <li>
+      <Link to="test4" smooth={true} duration={500} className='cursor-pointer text-white hover:text-[#EF8D2A]'>
+        TESTIMONIALS
+      </Link>
+    </li>
+  </ul>
+</div>
+
 
             {/* Equipments Section */}
             <div>
@@ -64,26 +82,39 @@ function Footer() {
 
             {/* Contact Us Section */}
             <div>
-              <h2 className='text-lg font-bold mb-4 text-[#EF8D2A]'>Contact Us</h2>
-              <ul className='space-y-2 font-semibold'>
-                <li className='flex items-center text-white'>
-                  <FaMapMarkerAlt className='mr-2' /> ST.NO. , 16819, Basant Vihar, Bathinda-151005 (Punjab)
-                </li>
-                <li className='flex items-center text-white'>
-                  <FaEnvelope className='mr-2' /> Sharma41321@gmail.com
-                </li>
-                <li className='flex items-center text-white'>
-                  <FaPhoneAlt className='mr-2' /> +123 456 7890
-                </li>
-              </ul>
-            </div>
+  <h2 className='text-lg font-bold mb-4 text-[#EF8D2A]'>Contact Us</h2>
+  <ul className='space-y-2 font-semibold'>
+    <li className='flex items-center text-white'>
+      <FaMapMarkerAlt className='mr-2' /> ST.NO. , 16819, Basant Vihar, Bathinda-151005 (Punjab)
+    </li>
+    <li className='flex items-center text-white'>
+      <FaEnvelope className='mr-2' /> <a href="mailto:Sharma41321@gmail.com" className="hover:text-[#EF8D2A]">Sharma41321@gmail.com</a>
+    </li>
+    <ul className="text-white space-y-2">
+  <li className="flex items-center gap-2">
+    <FaPhoneAlt className="" />
+    <a href="tel:+916283381082" className="hover:text-[#EF8D2A]">+91 62833 81082</a>
+  </li>
+  <li className="flex items-center gap-2">
+    <FaPhoneAlt className="" />
+    <a href="tel:+919780463277" className="hover:text-[#EF8D2A]">+91 97804 63277</a>
+  </li>
+  <li className="flex items-center gap-2">
+    <FaPhoneAlt className="" />
+    <a href="tel:+917837141321" className="hover:text-[#EF8D2A]">+91 78371 41321</a>
+  </li>
+</ul>
+
+  </ul>
+</div>
+
           </div>
 
           <div className='text-center font-semibold mt-6 sm:mt-8 md:flex justify-between'>
             <div className='mb-3 md:mb-0'>
-              <p><Link to="/terms" className="hover:text-[#EF8D2A]">Terms and Conditions</Link> | <Link to="/privacy" className="hover:text-[#EF8D2A]">Privacy Policy</Link> | <Link to="/faq" className="hover:text-[#EF8D2A]">FAQ</Link></p>
+              <p><Link to="" className="hover:text-[#EF8D2A]">Terms and Conditions</Link> | <Link to="" className="hover:text-[#EF8D2A]">Privacy Policy</Link> | <Link to="" className="hover:text-[#EF8D2A]">FAQ</Link></p>
             </div>
-            <p>&copy; 2025 Your Company. All rights reserved.</p>
+            <p>&copy; 2025 TANISH ENTERPRISE. All rights reserved.</p>
           </div>
         </div>
       </footer>
