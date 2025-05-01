@@ -29,13 +29,13 @@ const cards = [
 ];
 
 const Card = ({ image, title, text, }) => (
-  <div className={`w-full max-w-sm bg-[#F7F7F7] text-black px-6 py-6 md:px-4 shadow-2xl `}>
+  <div className={`w-full max-w-sm bg-[#F7F7F7] text-black px-6 py-8 md:px-4 shadow-2xl `}>
     <img src={image} alt={title} className='w-full h-32 object-contain mb-4' />
     <h2 className='text-sm lg:text-xl font-bold mb-2'>{title}</h2>
     <p className='mb-3  md:mb-1 text-[10px] lg:text-sm'>{text}</p>
-    <a href='#' className='text-[#EF8D2A] flex items-center gap-1 lg:gap-2 text-sm lg:text-xl font-medium hover:underline'>
+    {/* <a href='#' className='text-[#EF8D2A] flex items-center gap-1 lg:gap-2 text-sm lg:text-xl font-medium hover:underline'>
       Learn More <FaArrowRight className='text-[10px] lg:text-sm' />
-    </a>
+    </a> */}
   </div>
 );
 

@@ -37,13 +37,9 @@ function RightSection() {
           </li>
         ))}
       </ul>
-      <div className="text-black mb-6 lg:mb-7 max-w-2xl text-lg leading-8 px mt-6 ml-2">
-  <h2>Your project deserves the best – and that’s what we deliver.</h2>
-</div>
-
- <button className='text-center flex items-center  cursor-pointer hover:bg-[#2f2c2c] text-white mt-5 md:mt-10 gap-4 bg-[#141414] py-2 px-4 md:px-10'>
+ {/* <button className='text-center flex items-center  cursor-pointer hover:bg-[#2f2c2c] text-white mt-5 md:mt-10 gap-4 bg-[#141414] py-2 px-4 md:px-10'>
     Learn More  <FaArrowRight />
-  </button>
+  </button> */}
 
      
       

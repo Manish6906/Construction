@@ -2,6 +2,7 @@ import React from 'react';
 import image1 from '../../assets/images/image1.png';
 import image3 from '../../assets/images/image3.png';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-scroll';
 
 function SecondSection() {
   return (
@@ -30,9 +31,11 @@ function SecondSection() {
 
           </h2>
 
+          <Link to="test3" smooth={true} duration={500} >
           <button className="bg-black text-white py-2 cursor-pointer px-8 rounded inline-flex items-center gap-2 hover:bg-gray-800 transition">
             Learn More <ArrowRight size={18} />
           </button>
+          </Link>
         </div>
 
         {/* Right Image Section */}
