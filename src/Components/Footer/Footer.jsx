@@ -10,7 +10,7 @@ import Logo1 from '../../assets/images/Logo1.png';
 function Footer() {
   return (
     <footer
-      className="relative mt-10 px-6 py-14 lg:px-20 bg-cover bg-center text-white"
+      className="relative mt-10 px-6 py-3 md:py-14 lg:px-20 bg-cover bg-center text-white"
       style={{ backgroundImage: `url(${footer})` }}
     >
       {/* Overlay */}
@@ -19,17 +19,23 @@ function Footer() {
       {/* Content */}
       <div className="relative z-10">
         {/* Header CTA */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
-         <img src={Logo1} alt=" Logo1" className="h-24 md:h-20 w-auto" />
+        <div className="flex flex-col md:flex-row justify-between items-center  mb-10 md:mb-0 gap-2 md:gap-6">
+  <div className=" md:justify-start ">
+    <img src={Logo1} alt="Logo1" className="h-30 md:h-26 object-contain w-full" />
+  </div>
 
-          <h1 className="text-2xl lg:text-3xl font-bold text-center md:text-left">Schedule Your Rental Today!</h1>
-          <a
-            href="tel:+916283381082"
-            className="flex items-center gap-2 px-6 py-2 bg-[#EF8D2A] hover:bg-[#e67e10] rounded transition-colors"
-          >
-            Make Appointment <FaArrowRight />
-          </a>
-        </div>
+  <h1 className="text-2xl lg:text-3xl font-bold text-center  flex-1">
+    Schedule Your Rental Today!
+  </h1>
+
+  <a
+    href="tel:+916283381082"
+    className="flex items-center gap-2 px-6 py-2 bg-[#EF8D2A] hover:bg-[#e67e10] rounded transition-colors"
+  >
+    Make Appointment <FaArrowRight />
+  </a>
+</div>
+
 
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 border-y-2 py-10">
@@ -83,12 +89,12 @@ function Footer() {
         </div>
 
         {/* Bottom Footer */}
-        <div className="mt-10 md:flex justify-between text-center text-sm font-medium space-y-4 md:space-y-0">
-          <div>
+        <div className="mt-10 md:flex justify-center text-center text-sm font-medium space-y-4 md:space-y-0">
+          {/* <div>
             <a href="#" className="hover:text-[#EF8D2A] mr-3">Terms & Conditions</a> |
             <a href="#" className="hover:text-[#EF8D2A] mx-3">Privacy Policy</a> |
             <a href="#" className="hover:text-[#EF8D2A] ml-3">FAQ</a>
-          </div>
+          </div> */}
           <p>&copy; 2025 TANISH ENTERPRISE. All rights reserved.</p>
         </div>
       </div>
