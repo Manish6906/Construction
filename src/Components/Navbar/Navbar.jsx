@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import logo from '../../assets/images/Logo.png';
 import { FaArrowRight } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll"; // Importing ScrollLink from react-scroll
 import mainlogo from '../../assets/images/MainLogo.png';
+import Logo1 from '../../assets/images/Logo1.png';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/">
-              <img src={mainlogo} alt="Logo" className=" h-12 md:h-15 w-auto" />
+              <img src={Logo1} alt="Logo1" className=" h-26 md:h-24 w-auto" />
             </a>
           </div>
 
@@ -97,8 +98,8 @@ const Navbar = () => {
             </ScrollLink>
           ))}
           <button className=" bg-[#EF8D2A] px-4 cursor-pointer py-2 flex items-center gap-2 rounded-md hover:bg-[#e67e10] transition-colors">
-            Make Appointment <FaArrowRight />
-          </button>
+          <a href="tel:+916283381082" className=" flex items-center gap-2">Make Appointment <FaArrowRight /> </a>
+          </button> 
         </div>
       )}
     </nav>
