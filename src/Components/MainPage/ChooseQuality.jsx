@@ -21,8 +21,9 @@ function ChooseQuality() {
               Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
             <button className="bg-[#EF8D2C] text-white cursor-pointer px-6 py-2 flex items-center gap-2 mt-4">
-              Contact Us Now
+            <a href="tel:+916283381082" className="flex items-center gap-2"> Contact Us Now
               <span className="text-xl">➔</span>
+              </a>
             </button>
           </div>
         </div>

@@ -110,7 +110,7 @@ function RentAndBuy() {
                   <span className="text-black">/{unit}</span>
                 </p>
                 <button className="bg-black text-white px-12 py-1 mt-2 md:mt-0  cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
-                  Rental Now
+                <a href="tel:+916283381082" className="flex gap-2 items-center">  Rental Now </a>
                 </button>
               </div>
             </div>
