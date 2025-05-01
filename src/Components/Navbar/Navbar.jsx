@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from '../../assets/images/Logo.png';
 import { FaArrowRight } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll"; // Importing ScrollLink from react-scroll
+import mainlogo from '../../assets/images/MainLogo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/">
-              <img src={logo} alt="Logo" className="h-10 w-auto" />
+              <img src={mainlogo} alt="Logo" className=" h-12 md:h-15 w-auto" />
             </a>
           </div>
 
