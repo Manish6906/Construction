@@ -97,8 +97,8 @@ const Navbar = () => {
             </ScrollLink>
           ))}
           <button className=" bg-[#EF8D2A] px-4 cursor-pointer py-2 flex items-center gap-2 rounded-md hover:bg-[#e67e10] transition-colors">
-            Make Appointment <FaArrowRight />
-          </button>
+          <a href="tel:+916283381082" className=" flex items-center gap-2">Make Appointment <FaArrowRight /> </a>
+          </button> 
         </div>
       )}
     </nav>
