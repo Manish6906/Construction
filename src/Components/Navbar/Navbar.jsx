@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6 xl:space-x-20">
+          <div className="hidden md:flex items-center space-x-3 xl:space-x-20">
             {navLinks.map((link) => (
               <ScrollLink
                 key={link.name}
@@ -43,7 +43,7 @@ const Navbar = () => {
           </div>
 
           {/* Appointment Button */}
-          <button className="hidden md:flex items-center gap-2 px-6 py-2 cursor-pointer bg-[#EF8D2A] rounded-sm hover:bg-[#e67e10] transition-colors">
+          <button className="hidden md:flex items-center gap-2 px-3 lg:px-6 py-2 cursor-pointer bg-[#EF8D2A] rounded-sm hover:bg-[#e67e10] transition-colors">
             Make Appointment <FaArrowRight />
           </button>
 
