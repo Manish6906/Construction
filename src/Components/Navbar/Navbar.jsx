@@ -79,7 +79,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-3">
+        <div className="md:hidden px-4 flex flex-col justify-center items-center pb-4 space-y-3">
           {navLinks.map((link) => (
             <ScrollLink
               key={link.name}
@@ -93,7 +93,7 @@ const Navbar = () => {
               {link.name}
             </ScrollLink>
           ))}
-          <button className="w-full bg-[#EF8D2A] px-4 cursor-pointer py-2 flex items-center gap-2 rounded-md hover:bg-[#e67e10] transition-colors">
+          <button className=" bg-[#EF8D2A] px-4 cursor-pointer py-2 flex items-center gap-2 rounded-md hover:bg-[#e67e10] transition-colors">
             Make Appointment <FaArrowRight />
           </button>
         </div>
