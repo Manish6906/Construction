@@ -25,7 +25,7 @@ function Footer() {
             <img src={mainlogo} alt='footer logo' className=" h-12 md:h-15" />
             <h1 className='text-xl lg:text-3xl font-bold  md:text-left'>Schedule Your Rental Today!</h1>
             <button className="mt-3 sm:mt-0 flex items-center gap-2 px-6 py-2 cursor-pointer bg-[#EF8D2A] rounded-sm hover:bg-[#e67e10] transition-colors">
-              Make Appointment <FaArrowRight />
+            <a href="tel:+916283381082" className="flex gap-2 items-center"> Make Appointment <FaArrowRight /> </a>
             </button>
           </div>
 

@@ -50,9 +50,9 @@ function AboutSection() {
           </div>
 
           <div className='flex justify-center md:justify-start mt-5'>
-          <button className="bg-black cursor-pointer text-white py-2 px-6 md:px-15 xl:px-27 inline-flex items-center gap-2 hover:bg-gray-800 transition">
+          {/* <button className="bg-black cursor-pointer text-white py-2 px-6 md:px-15 xl:px-27 inline-flex items-center gap-2 hover:bg-gray-800 transition">
             Learn More <ArrowRight size={18} />
-          </button>
+          </button> */}
           </div>
         </div>
 
