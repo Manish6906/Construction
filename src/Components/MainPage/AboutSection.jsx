@@ -14,8 +14,9 @@ function AboutSection() {
             <MdOutlineHorizontalRule className="text-4xl" />
             About Us
           </div>
-          <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold leading-tight">
-            Excellence in Tanish Enterprise Rentals.
+          <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold leading-tight">
+          Leaders in Construction Equipment Rental – Bathinda, Punjab
+
           </h1>
 
           <div className="flex flex-col md:flex-row gap-6">
@@ -30,20 +31,27 @@ function AboutSection() {
               <div className="px-5 py-4 border-r-2 border-gray-300">
                 <h2 className="text-2xl lg:text-3xl font-extrabold mb-2">Our Vision</h2>
                 <p className="text-sm text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper.
+                To become the most preferred equipment rental partner in Punjab and beyond.
                 </p>
+               
+                <h2 className="text-2xl lg:text-3xl font-extrabold mb-2 mt-6">Our Mission</h2>
+                <p className="text-sm text-gray-600">
+                To power construction projects with dependable machinery and unmatched service quality.
+                </p>
+
+              
               </div>
             </div>
 
             {/* Description */}
             <div className="text-sm xl:text-[17px]  text-gray-700 text-center  md:text-start space-y-4 mt-6 md:mt-0 w-full md:w-1/2">
   <p>
-    Suspendisse nec odio vel arcu tempor posuere. Quisque venenatis efficitur leo quis luctus. Nulla maximus,
-    purus eu sodales gravida, augue purus atnic elementum ante, quis aliquet nulla urna ac dui.
+  Tanish Enterprise is a trusted name in the field of heavy machinery and construction equipment rental. Based in Bathinda, Punjab, we specialize in providing high-performance machines like JCBs, Excavators, Hydra Cranes, Dozers, and Rollers to contractors, builders, and government projects.
+
   </p>
   <p>
-    Donec nec sem at eros porta finibus eu et felis. Cras quis libero eu ex euismod tempor. Aliquam eu justo
-    quis nisl euismod. Etiam quis mattis ante.
+  With a strong focus on reliability, affordability, and customer satisfaction, we have built a reputation for delivering well-maintained equipment on time, every time. Whether it's road construction, land development, or industrial work – we ensure you get the right equipment for the job.
+
   </p>
 </div>
 

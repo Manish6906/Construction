@@ -9,17 +9,17 @@ const cards = [
   {
     image: card1,
     title: 'Wheel Loader',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.',
+    text: 'Powerful  for loading, lifting, and transporting materials on construction sites. Ideal for earthmoving and site prep.',
   },
   {
     image: card2,
     title: 'Drum Roller',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.',
+    text: 'Perfect for roadwork and compaction tasks. Our vibratory rollers ensure solid, smooth surfaces for all groundwork.',
   },
   {
     image: card3,
     title: 'Excavator',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.',
+    text: 'Versatile machine for digging, trenching, and demolition. Ideal for both residential and commercial construction projects.',
   },
   {
     image: card4,

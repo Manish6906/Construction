@@ -22,11 +22,13 @@ function SecondSection() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl text-center md:text-left lg:text-6xl mt-5  font-bold text-black lg:leading-16 mb-4">
-            We Provide <br /> Industry Focused
+            We Provide <br /> Industry 
           </h1>
           <h2 className="text-md  lg:text-2xl mb-6 text-center md:text-left md:w-4/5 xl:w-5/6">
-            Serving for over 12 years, 98% of companies choose us for our tough equipment
-            and top-tier service, delivering exceptional results every time.
+          Focused Heavy Equipment Services
+          Specialized Equipment Solutions for Public & Private Projects.
+
+
           </h2>
 
           <Link to="test3" smooth={true} duration={500} >

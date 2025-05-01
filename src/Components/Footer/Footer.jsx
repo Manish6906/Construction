@@ -1,10 +1,11 @@
 import React from 'react';
 import footer from '../../assets/images/footerimg.png';
-import logo from '../../assets/images/Logo.png';
 import { FaArrowRight, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { CiYoutube } from "react-icons/ci";
 import { Link } from 'react-scroll';
 import mainlogo from '../../assets/images/MainLogo.png';
+import Logo1 from '../../assets/images/Logo1.png';
+
 
 function Footer() {
   return (
@@ -18,8 +19,9 @@ function Footer() {
       {/* Content */}
       <div className="relative z-10">
         {/* Header CTA */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
-          <img src={mainlogo} alt="Main Logo" className="h-12 md:h-16" />
+        <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
+         <img src={Logo1} alt=" Logo1" className="h-24 md:h-20 w-auto" />
+
           <h1 className="text-2xl lg:text-3xl font-bold text-center md:text-left">Schedule Your Rental Today!</h1>
           <a
             href="tel:+916283381082"
@@ -30,7 +32,7 @@ function Footer() {
         </div>
 
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 border-y-4 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 border-y-2 py-10">
           {/* About Us */}
           <div>
             <h2 className="text-xl font-bold text-[#EF8D2A] mb-4">About Us</h2>
