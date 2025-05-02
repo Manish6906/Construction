@@ -66,7 +66,7 @@ function StarRating() {
 
 function RentAndBuy() {
   return (
-    <div className="px-4 py-10 max-w-7xl mx-auto">
+    <div className="px-4 md:py-10 max-w-7xl mx-auto">
       <div className="text-center mb-10">
      <div className='flex items-center justify-center'>
      <MdOutlineHorizontalRule className='text-4xl' />

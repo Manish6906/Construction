@@ -10,11 +10,11 @@ function AboutSection() {
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Left section */}
         <div className="w-full md:w-1/2 space-y-2 ">
-          <div className="text-[#EF8D2A] flex items-center text-lg font-medium">
+          <div className="text-[#EF8D2A] flex items-center justify-center md:justify-start text-lg font-medium">
             <MdOutlineHorizontalRule className="text-4xl" />
             About Us
           </div>
-          <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold leading-tight">
+          <h1 className="text-2xl md:text-4xl xl:text-5xl text-center md:text-start font-bold leading-tight">
           Leaders in Construction Equipment Rental – Bathinda, Punjab
 
           </h1>

@@ -12,12 +12,12 @@ const features = [
 function RightSection() {
   return (
     <section className="p-6 py-10  "> {/* Increased padding */}
-      <div className="flex  items-center justify-center md:justify-start text-[#EF8D2A] mb-4"> {/* Increased gap and margin */}
+      <div className="flex  items-center justify-center md:justify-start text-[#EF8D2A] mb-1 md:mb-4"> {/* Increased gap and margin */}
         <MdOutlineHorizontalRule className="text-4xl" /> {/* Increased icon size */}
-        <p className="text-2xl md:text-4xl font-semibold">Why Choose Tanish Enterprise</p> {/* Increased text size */}
+        <p className="text-sm md:text-4xl font-semibold">Why Choose Tanish Enterprise</p> {/* Increased text size */}
       </div>
 
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-4 leading-7 text-center md:text-start md:leading-10 lg:leading-12"> {/* Increased font size */}
+      <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-4 leading-7 text-center md:text-start md:leading-10 lg:leading-12"> {/* Increased font size */}
       Reliable Construction Equipment Rentals in Punjab
 
       </h1>
