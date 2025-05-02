@@ -23,8 +23,8 @@ const cards = [
   },
   {
     image: card4,
-    title: 'Excavator',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.',
+    title: 'Backhoe Loader',
+    text: 'Versatile and compact, perfect for  lifting, and material handling in tight spaces. Ideal for small to medium-scale projects like landscaping and construction.',
   },
 ];
 

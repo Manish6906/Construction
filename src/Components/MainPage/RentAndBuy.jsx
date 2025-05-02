@@ -11,38 +11,32 @@ import { MdOutlineHorizontalRule } from "react-icons/md";
 const equipmentList = [
   {
     title: 'DX-T830 Wheel Loaders',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    price: '$299/Day',
+    description: 'Built for performance in rough terrains and heavy lifting.',
     image: image5,
   },
   {
     title: 'Excavator ZX-200',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    price: '$349/Day',
+    description: 'Precision excavation for any scale project—robust and reliable.',
     image: image9,
   },
   {
     title: 'Mini Skid Steer',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    price: '$199/Day',
+    description: 'Compact, powerful, and easy to maneuver—perfect for tight sites.',
     image: image8,
   },
   {
     title: 'Backhoe Loader BX-50',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    price: '$279/Day',
+    description: 'Versatile and efficient for digging, lifting, and material handling in tight spaces. Ideal for small to medium-scale projects.',
     image: image7,
   },
   {
     title: 'Bulldozer D3 Series',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    price: '$399/Day',
+    description: 'Powerful and durable, built to handle tough grading and earth-moving tasks with ease. Perfect for construction and mining projects.',
     image: image6,
   },
   {
     title: 'Forklift FX-1200',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    price: '$159/Day',
+    description: 'Heavy-duty and reliable for  transporting materials across construction sites or warehouses. Excellent for high-capacity operations.',
     image: image4,
   },
 ];
@@ -73,15 +67,15 @@ function RentAndBuy() {
      <h2 className="text-xl text-[#EF8D2A] font-semibold"> Rent or Buy</h2>
      </div>
 
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">Flexible Options, Maximum Power.</h1>
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">Flexible Rental or Purchase Options for Every Need</h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis gravida ante, quis pulvinar odio commodo efficitur.
+        Get the best-in-class construction equipment—rent or buy as per your project needs. Power, durability, and efficiency—every time.
         </p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {equipmentList.map((item, index) => {
-          const [amount, unit] = item.price.split('/');
+          {/* const [amount, unit] = item.price.split('/'); */}
 
           return (
             <div
@@ -105,10 +99,10 @@ function RentAndBuy() {
               <p className="text-gray-600">{item.description}</p>   
 
               <div className="md:flex justify-between items-center mt-4">
-                <p className="text-lg font-semibold">
+                {/* <p className="text-lg font-semibold">
                   <span className="text-[#EF8D2A]">{amount}</span>
                   <span className="text-black">/{unit}</span>
-                </p>
+                </p> */}
                 <button className="bg-black text-white px-12 py-1 mt-2 md:mt-0  cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
                 <a href="tel:+916283381082" className="flex gap-2 items-center">  Rental Now </a>
                 </button>

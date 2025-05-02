@@ -15,10 +15,9 @@ function ChooseQuality() {
         <div className="relative w-11/12 max-w-6xl flex flex-col md:flex-row items-center md:items-start mt-16 z-10 px-4">
           <div className="md:w-1/2 p-6">
             <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Choose Quality, </h1>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Choose Us!</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Choose Tanish Enterprises!</h1>
             <p className="text-white mb-2 text-sm sm:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            We deliver reliable, high-performance heavy equipment for all your construction needs. Trusted by professionals for power, precision, and performance.
             </p>
             <button className="bg-[#EF8D2C] text-white cursor-pointer px-6 py-2 flex items-center gap-2 mt-4">
             <a href="tel:+916283381082" className="flex items-center gap-2"> Contact Us Now

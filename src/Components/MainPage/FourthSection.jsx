@@ -48,9 +48,7 @@ function FourthSection() {
               Experts in Heavy Equipment Solutions.
             </h1>
             <p className="text-gray-300 text-base xl:text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis gravida ante,
-              quis porta mauris. Integer fermentum ligula in nunc hendrerit, at iaculis lorem
-              tincidunt.
+            At Tanish Enterprises, we pride ourselves on delivering top-tier machinery that powers successful projects across industries. With 98% client satisfaction, 100% project completion, and 100% retention, we are your dependable partner for heavy equipment rentals and purchases.
             </p>
           </div>
 
