@@ -3,7 +3,12 @@ import firstImage from '../../assets/images/firstImage.png';
 import secondImage from '../../assets/images/secondImage.png';
 import { MdOutlineHorizontalRule } from 'react-icons/md';
 import { ArrowRight } from 'lucide-react';
+
 import CountUp from 'react-countup';
+import realImage from '../../assets/images/Realiamge.jpg';
+import realimag2 from '../../assets/images/realImage2.jpg';
+import final from '../../assets/images/final.jpg';
+
 function AboutSection() {
   return (
     <div className="py-10 px-4 sm:px-8 md:px-16 lg:px-20" id='test3'>
@@ -66,11 +71,11 @@ function AboutSection() {
 
         {/* Right section */}
         <div className="w-full md:w-1/2 m md:mt-0 relative flex justify-center">
-          <img src={firstImage} alt="First" className="w-full rounded-lg shadow-md max-w-[500px]" />
+          <img src={realImage} alt="First" className="w-full rounded-lg shadow-md max-w-[500px]" />
           <img
-            src={secondImage}
+            src={final}
             alt="Second"
-            className="absolute bottom-[1rem] sm:bottom-[3rem] -right-2 sm:right-10 md:-right-15 lg:-right-20 w-2/4 sm:w-1/2 rounded-lg shadow-lg"
+            className="absolute bottom-[1rem] sm:bottom-[2rem] h-40 lg:h-60 xl:h-80  object-cover -right-2 sm:right-10 md:-right-15 lg:-right-20 w-2/4 sm:w-1/2 rounded-lg shadow-lg"
           />
         </div>
       </div>
