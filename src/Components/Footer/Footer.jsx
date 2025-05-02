@@ -19,21 +19,23 @@ function Footer() {
       {/* Content */}
       <div className="relative z-10">
         {/* Header CTA */}
-        <div className="flex flex-col md:flex-row justify-between items-center  mb-10 md:mb-0 gap-2 md:gap-6">
+        <div className="flex flex-col md:flex-row  items-start md:justify-between sm:items-center  mb-10 md:mb-0  md:gap-6">
   <div className=" md:justify-start ">
     <img src={Logo1} alt="Logo1" className="h-30 md:h-26 object-contain w-full" />
   </div>
 
-  <h1 className="text-2xl lg:text-3xl font-bold text-center  flex-1">
+  <h1 className="text-2xl lg:text-3xl font-bold  md:text-center mb-3 sm:mb-0  flex-1">
     Schedule Your Rental Today!
   </h1>
 
-  <a
+  
+  <a 
     href="tel:+916283381082"
     className="flex items-center gap-2 px-6 py-2 bg-[#EF8D2A] hover:bg-[#e67e10] rounded transition-colors"
   >
     Make Appointment <FaArrowRight />
   </a>
+ 
 </div>
 
 

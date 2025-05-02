@@ -14,7 +14,7 @@ function SecondSection() {
 
         {/* Left Text Section */}
         <div className="text-white max-w-2xl  mb-10 md:mb-0">
-          <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
+          <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
             <span className="w-6 md:w-10 h-1 bg-black "></span>
             <h3 className="text-sm  lg:text-2xl font-semibold">
               Welcome to Tanish Enterprise
@@ -32,9 +32,11 @@ function SecondSection() {
           </h2>
 
           <Link to="test3" smooth={true} duration={500} >
-          <button className="bg-black text-white py-2 cursor-pointer px-8 rounded inline-flex items-center gap-2 hover:bg-gray-800 transition">
+         <div className='flex justify-center sm:justify-start'>
+         <button className="bg-black text-white py-2 cursor-pointer px-8 rounded inline-flex items-center gap-2 hover:bg-gray-800 transition">
             Learn More <ArrowRight size={18} />
           </button>
+         </div>
           </Link>
         </div>
 
