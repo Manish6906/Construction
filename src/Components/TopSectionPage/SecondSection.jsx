@@ -15,9 +15,9 @@ function SecondSection() {
         {/* Left Text Section */}
         <div className="text-white max-w-2xl  mb-10 md:mb-0">
           <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
-            <span className="w-6 md:w-10 h-1 bg-black "></span>
+            <span className="w-6 md:w-7 h-1 bg-black "></span>
             <h3 className="text-sm  lg:text-2xl font-semibold">
-              Welcome to Tanish Enterprise
+              Welcome to <span className='bg-black text-white px-2 py-1 rounded inline-block animate-bounce'>Tanish Enterprise</span>
             </h3>
           </div>
 

@@ -28,8 +28,6 @@ function LastSection() {
 
   return (
     <div className="p-5 md:flex items-center justify-evenly gap-10 sm:mt-20 md:mt-30 lg:mt-70">
-
-      {/* Left Section */}
       <div className="relative">
         <img src={image} alt="Machine at Work" className="w-full h-auto" />
 
@@ -38,8 +36,8 @@ function LastSection() {
       <FaRegPlayCircle className="text-3xl text-white" />
       <p className="text-white text-sm font-semibold">See Our Machines at Work</p>
    </div>
+   
 </div>
-
 
 
       </div>
