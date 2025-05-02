@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react';
 import CountUp from 'react-countup';
 import realImage from '../../assets/images/Realiamge.jpg';
 import realimag2 from '../../assets/images/realImage2.jpg';
-import final from '../../assets/images/final.jpg';
+import final from '../../assets/images/Tanish Enterprises.jpg';
 
 function AboutSection() {
   return (
