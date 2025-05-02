@@ -71,11 +71,11 @@ function AboutSection() {
 
         {/* Right section */}
         <div className="w-full md:w-1/2 m md:mt-0 relative flex justify-center">
-          <img src={realImage} alt="First" className="w-full rounded-lg shadow-md max-w-[500px]" />
+          <img src={realImage} alt="First" className="w-full rounded-lg   border-8 border-white shadow-md max-w-[500px]" />
           <img
             src={final}
             alt="Second"
-            className="absolute bottom-[1rem] sm:bottom-[2rem] h-40 lg:h-60 xl:h-80  object-cover -right-2 sm:right-10 md:-right-15 lg:-right-20 w-2/4 sm:w-1/2 rounded-lg shadow-lg"
+            className="absolute bottom-[1rem] sm:bottom-[2rem] h-40 lg:h-60 xl:h-80  border-6 border-white object-cover -right-2 sm:right-10 md:-right-15 lg:-right-20 w-2/4 sm:w-1/2 rounded-lg shadow-lg"
           />
         </div>
       </div>

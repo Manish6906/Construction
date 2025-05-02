@@ -85,7 +85,7 @@ function RentAndBuy() {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-40 object-contain rounded-md mb-4 "
+                className="w-full h-40 object-contain  rounded-md mb-4 "
               />
 
               <hr className="border-t-2 border-[#EF8D2A] my-4" />
