@@ -15,13 +15,13 @@ import { MdOutlineHorizontalRule } from "react-icons/md";
 const testimonialsData = [
   {
     text: 'Outstanding service and top-notch machinery! Tanish Enterprises made our project run smoother than ever. The equipment was reliable, and their team was extremely helpful.',
-    name: 'Ravi M.',
+    name: 'Anjali K',
     role: 'Site Supervisor',
     image: Ellipse95,
   },
   {
     text: 'I’ve rented from other companies before, but Tanish Enterprises stands out for their punctuality, machine quality, and customer support. Highly recommended!',
-    name: 'Anjali K',
+    name: 'Ravi M.',
     role: 'Construction Manager',
     image: Ellipse96,
   },
