@@ -29,7 +29,7 @@ const cards = [
 ];
 
 const Card = ({ image, title, text, }) => (
-  <div className={`w-full max-w-sm bg-[#F7F7F7] text-black px-6 py-8 md:px-4 shadow-2xl `}>
+  <div className={`w-full max-w-sm bg-[#F7F7F7] text-black px-6 py-8 md:px-4 shadow-2xl transition hover:scale-105 hover:duration-200 cursor-pointer`}>
     <img src={image} alt={title} className='w-full h-32 object-contain mb-4' />
     <h2 className='text-sm lg:text-xl font-bold mb-2'>{title}</h2>
     <p className='mb-3  md:mb-1 text-[10px] lg:text-sm'>{text}</p>
@@ -42,7 +42,7 @@ const Card = ({ image, title, text, }) => (
 function FirstSection() {
   return (
     <div className='py-10 px-4 '>
-      <div className='grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2  justify-items-center'>
+      <div className='grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-2  justify-items-center '>
         {cards.map((card, index) => (
           <Card key={index} {...card} />
         ))}

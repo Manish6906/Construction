@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { Link as ScrollLink } from "react-scroll"; // Importing ScrollLink from react-scroll
+import { Link, Link as ScrollLink } from "react-scroll"; // Importing ScrollLink from react-scroll
 import mainlogo from '../../assets/images/MainLogo.png';
 import Logo1 from '../../assets/images/Logo1.png';
+
 
 
 const Navbar = () => {
@@ -22,9 +23,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/">
+           <Link to='test1'>
+           <a href="/">
               <img src={Logo1} alt="Logo1" className=" h-26 md:h-24 " />
             </a>
+           </Link>
           </div>
 
           {/* Desktop Menu */}
