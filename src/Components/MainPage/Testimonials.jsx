@@ -14,39 +14,39 @@ import { MdOutlineHorizontalRule } from "react-icons/md";
 // Testimonials data
 const testimonialsData = [
   {
-    text: 'Reliable, powerful, and easy to work with—our go-to for all construction machinery.',
-    name: 'Emily Roberts',
+    text: 'Outstanding service and top-notch machinery! Tanish Enterprises made our project run smoother than ever. The equipment was reliable, and their team was extremely helpful.',
+    name: 'Ravi M.',
     role: 'Site Supervisor',
     image: Ellipse95,
   },
   {
-    text: 'Reliable, powerful, and easy to work with—our go-to for all construction machinery.',
-    name: 'John Carter',
-    role: 'Project Manager',
+    text: 'I’ve rented from other companies before, but Tanish Enterprises stands out for their punctuality, machine quality, and customer support. Highly recommended!',
+    name: 'Anjali K',
+    role: 'Construction Manager',
     image: Ellipse96,
   },
   {
-    text: 'Reliable, powerful, and easy to work with—our go-to for all construction machinery.',
-    name: 'Sarah Khan',
-    role: 'Civil Engineer',
+    text: 'From the first call to final delivery, everything was seamless. The excavator we rented worked perfectly throughout the project. Great experience overall.',
+    name: 'Dinesh R.',
+    role: ' Project Engineer',
     image: Ellipse97,
   },
   {
-    text: 'Reliable, powerful, and easy to work with—our go-to for all construction machinery.',
-    name: 'Carlos Diaz',
-    role: 'Foreman',
+    text: 'Tanish Enterprises has become our go-to for all heavy equipment needs. Their commitment to quality and service is unmatched Great service and easy process!.',
+    name: 'Sneha P.',
+    role: 'Real Estate Developer',
     image: Ellipse95,
   },
   {
-    text: 'Reliable, powerful, and easy to work with—our go-to for all construction machinery.',
-    name: 'Aditi Mehra',
-    role: 'Site Planner',
+    text: 'Exceptional quality machines, competitive prices, and professional staff. Couldn’t ask for a better equipment partner Their equipment helped us meet our deadlines without any hassle.!',
+    name: 'Rahul T.',
+    role: ' Infrastructure Contractor',
     image: Ellipse96,
   },
   {
-    text: 'Reliable, powerful, and easy to work with—our go-to for all construction machinery.',
-    name: 'Liam Smith',
-    role: 'Operations Head',
+    text: 'Tanish Enterprises is a company you can trust. Their dedication to quality and customer satisfaction truly shows Everything from booking to return was smooth. Highly professional team!.',
+    name: 'Rajeev S.',
+    role: 'Operations Manager',
     image: Ellipse97,
   },
 ];
@@ -76,11 +76,11 @@ function Testimonials() {
   
           {/* Added Line Below the Heading */}
           
-          <h1 className="text-2xl lg:text-5xl font-bold text-black mb-2">Client Confidence Speaks.</h1>
+          <h1 className="text-2xl lg:text-5xl font-bold text-black mb-2">What Our Clients Say</h1>
         </div>
         <div className="md:w-1/2 text-gray-800 text-center md:text-start mt-4 md:mt-0">
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis gravida ante, quis pulvinar odio commodo efficitur. Donec nec sem at eros porta finibus eu et felis. Cras quis libero eu ex euismod tempor.
+          Discover why our clients consistently trust Tanish Enterprises for their equipment rental needs. Our dedication to quality, reliability, and customer satisfaction has made us a preferred partner for projects of all sizes.
           </p>
         </div>
       </div>

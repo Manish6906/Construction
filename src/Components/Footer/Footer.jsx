@@ -45,7 +45,7 @@ function Footer() {
           <div>
             <h2 className="text-xl font-bold text-[#EF8D2A] mb-4">About Us</h2>
             <p className="font-medium leading-relaxed">
-              We are committed to providing the best services to our customers. Our team is dedicated to excellence in every project we undertake.
+            At Tanish Enterprises, we specialize in delivering reliable, high-performance equipment tailored to your project needs. With a focus on quality, convenience, and outstanding customer service, we ensure your success every step of the way.
             </p>
           </div>
 

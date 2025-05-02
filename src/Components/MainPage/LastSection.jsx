@@ -10,15 +10,15 @@ function LastSection() {
   const faqs = [
     {
       question: "How do I determine which equipment is right for my project?",
-      answer: "We help you select the perfect equipment based on your project size, terrain, and specific needs."
+      answer: "Contact our team for a free consultation Share your project type, scale, and site conditions We’ll recommend suitable equipment based on efficiency and safety Site visits can be arranged if needed."
     },
     {
       question: "What is the rental process for your equipment?",
-      answer: "Simply contact us, select your equipment, complete basic documentation, and we'll arrange delivery."
+      answer: "Choose the equipment you need Get a customized quote Sign the rental agreement Schedule delivery or pickup Enjoy 24/7 support during the rental period."
     },
     {
-      question: "Do you provide maintenance for rented equipment?",
-      answer: "Yes, regular maintenance and support services are included during the rental period."
+      question: "Do you provide operators with the equipment?",
+      answer: "Yes, trained and certified operators are available upon request Operator charges are included in the quote if required All operators follow strict safety protocols Ideal for clients without in-house machine operators."
     }
   ];
 
@@ -54,7 +54,7 @@ function LastSection() {
         <h1 className="text-3xl font-bold mb-4 xl:text-6xl xl:leading-20 text-center md:text-start">Quick Answers, Quick Solutions.</h1>
 
         <p className="text-gray-600 mb-6 text-center md:text-start">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis gravida ante, quis pulvinar odio commodo efficitur.
+        We know your time is valuable. That’s why we’ve gathered the most frequently asked questions to guide you through our rental process—quickly and confidently.
         </p>
 
         <div className="bg-black text-white flex items-center justify-between px-4 py-3 mb-4">
@@ -63,8 +63,7 @@ function LastSection() {
         </div>
 
         <p className="text-gray-600 mb-6">
-          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-          Separated they live in Bookmarksgrove right at the coast.
+        We offer a wide range of heavy equipment, including excavators, bulldozers, cranes, loaders, and more — perfect for construction, industrial, or infrastructure projects.
         </p>
 
         {/* FAQ Accordion */}
