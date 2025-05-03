@@ -9,7 +9,7 @@ import Ellipse97 from '../../assets/images/Ellipse 97.png';
 import Vector from '../../assets/images/Vector.png';
 import { Star } from 'lucide-react';
 import { MdOutlineHorizontalRule } from "react-icons/md";
-
+import { motion } from 'framer-motion';
 
 // Testimonials data
 const testimonialsData = [
@@ -40,13 +40,13 @@ const testimonialsData = [
   {
     text: 'Exceptional quality machines, competitive prices, and professional staff. Couldn’t ask for a better equipment partner Their equipment helped us meet our deadlines without any hassle.!',
     name: 'Rahul T.',
-    role: ' Infrastructure Contractor',
+    role: ' Infrastructure Contractor',
     image: Ellipse96,
   },
   {
     text: 'Tanish Enterprises is a company you can trust. Their dedication to quality and customer satisfaction truly shows Everything from booking to return was smooth. Highly professional team!.',
     name: 'Rajeev S.',
-    role: 'Operations Manager',
+    role: 'Operations Manager',
     image: Ellipse97,
   },
 ];
@@ -64,85 +64,96 @@ function StarRating() {
 
 function Testimonials() {
   return (
-   <div className='bg-gray-300' id='test4'>
-     <div className="max-w-7xl mx-auto px-4 py-6 ">
-      {/* Heading Section (Pushed down slightly using mt-10) */}
-      <div className="flex flex-col md:flex-row justify-between items-center mb-6 mt-10">
-        <div className="md:w-1/2 text-center md:text-left">
-        <div className='flex justify-center items-center md:justify-start'>
-        <MdOutlineHorizontalRule className='text-3xl' />
-        <h3 className="text-[#EF8D2A] text-lg font-semibold mb-1">Testimonials</h3>
-        </div>
-  
-          {/* Added Line Below the Heading */}
-          
-          <h1 className="text-2xl lg:text-5xl font-bold text-black mb-2">What Our Clients Say</h1>
-        </div>
-        <div className="md:w-1/2 text-gray-800 text-center md:text-start mt-4 md:mt-0">
-          <p>
-          Discover why our clients consistently trust Tanish Enterprises for their equipment rental needs. Our dedication to quality, reliability, and customer satisfaction has made us a preferred partner for projects of all sizes.
-          </p>
-        </div>
-      </div>
-
-      {/* Divider Line */}
-      <div className="h-1 w-full bg-black mb-14 " />
-
-      {/* Testimonials Carousel */}
-      <Swiper
-        modules={[Pagination]}
-        spaceBetween={30}
-        slidesPerView={3}
-        pagination={{
-          clickable: true,
-          el: '.swiper-pagination-custom',
-        }}
-        breakpoints={{
-          320: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-        className="p-30 "
-      >
-        {testimonialsData.map((testimonial, index) => (
-          <SwiperSlide key={index}>
-            <div className="bg-white px-6 py-16 md:py-16 shadow-md flex flex-col text-left transition hover:scale-105 duration-300 h-full relative">
-              {/* Star Rating */}
-              <div className="mb-6">
-                <StarRating />
-              </div>
-
-              {/* Testimonial Text */}
-              <p className="text-gray-800 italic mb-4">“{testimonial.text}”</p>
-
-              {/* User Info */}
-              <div className="flex items-center gap-4 mt-9">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-16 h-16 object-cover"
-                />
-                <div>
-                  <h2 className="text-lg font-medium text-black">{testimonial.name}</h2>
-                  <p className="text-gray-800 text-sm">{testimonial.role}</p>
-                </div>
-              </div>
-
-              {/* Vector Icon - Bottom Right */}
-              <img
-                src={Vector}
-                alt="Vector"
-                className="w-8 h-8  absolute bottom-20 right-4"
-              />
+    <div className='bg-gray-300' id='test4'>
+      <div className="max-w-7xl mx-auto px-4 py-6 ">
+        {/* Heading Section */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="flex flex-col md:flex-row justify-between items-center mb-6 mt-10"
+        >
+          <div className="md:w-1/2 text-center md:text-left">
+            <div className='flex justify-center items-center md:justify-start'>
+              <MdOutlineHorizontalRule className='text-3xl' />
+              <h3 className="text-[#EF8D2A] text-lg font-semibold mb-1">Testimonials</h3>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
 
-      {/* Custom Pagination Dots */}
-      <div className="swiper-pagination-custom flex  justify-center mt-8" />
+            <h1 className="text-2xl lg:text-5xl font-bold text-black mb-2">What Our Clients Say</h1>
+          </div>
+          <div className="md:w-1/2 text-gray-800 text-center md:text-start mt-4 md:mt-0">
+            <p>
+              Discover why our clients consistently trust Tanish Enterprises for their equipment rental needs. Our dedication to quality, reliability, and customer satisfaction has made us a preferred partner for projects of all sizes.
+            </p>
+          </div>
+        </motion.div>
+
+        {/* Divider Line */}
+        <div className="h-1 w-full bg-black mb-14 " />
+
+        {/* Testimonials Carousel */}
+        <Swiper
+          modules={[Pagination]}
+          spaceBetween={30}
+          slidesPerView={3}
+          pagination={{
+            clickable: true,
+            el: '.swiper-pagination-custom',
+          }}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+          className="p-30 "
+        >
+          {testimonialsData.map((testimonial, index) => (
+            <SwiperSlide key={index}>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
+                viewport={{ once: true }}
+                className="bg-white px-6 py-16 shadow-md flex flex-col text-left h-full relative"
+              >
+                {/* Star Rating */}
+                <div className="mb-6">
+                  <StarRating />
+                </div>
+
+                {/* Testimonial Text */}
+                <p className="text-gray-800 italic mb-4">“{testimonial.text}”</p>
+
+                {/* User Info */}
+                <div className="flex items-center gap-4 mt-9">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-16 h-16 object-cover rounded-full"
+                  />
+                  <div>
+                    <h2 className="text-lg font-medium text-black">{testimonial.name}</h2>
+                    <p className="text-gray-800 text-sm">{testimonial.role}</p>
+                  </div>
+                </div>
+
+                {/* Vector Icon - Bottom Right */}
+                <img
+                  src={Vector}
+                  alt="Vector"
+                  className="w-8 h-8 absolute bottom-20 right-4"
+                />
+              </motion.div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Custom Pagination Dots */}
+        <div className="swiper-pagination-custom flex gap-2 justify-center mt-8" />
+      </div>
     </div>
-   </div>
   );
 }
 
