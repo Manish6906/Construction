@@ -22,8 +22,8 @@ function SecondSection() {
         >
           <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
             <span className="w-6 md:w-7 h-1 bg-black"></span>
-            <h3 className="text-sm lg:text-2xl font-semibold">
-              Welcome to <span className='bg-black text-white px-2 py-1 rounded inline-block animate-bounce'>Tanish Enterprise</span>
+            <h3 className="text-sm lg:text-2xl font-semibold ">
+              Welcome to <span className='bg-black text-white px-2 py-1 rounded inline-block animate-bounce josefin-sans-'>Tanish Enterprise</span>
             </h3>
           </div>
 
