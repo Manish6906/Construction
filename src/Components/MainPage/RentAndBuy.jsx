@@ -99,7 +99,7 @@ function RentAndBuy() {
             <h2 className="text-xl font-semibold text-black">{item.title}</h2>
             <p className="text-gray-600">{item.description}</p>
 
-            <div className="md:flex justify-between items-center mt-4">
+            <div className="flex flex-col sm:flex-row justify-center md:justify-between gap-2 items-center mt-4">
               <button className="bg-black text-white px-8 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
                 <a href="tel:+916283381082" className="flex gap-2 items-center">Rental Now</a>
               </button>
