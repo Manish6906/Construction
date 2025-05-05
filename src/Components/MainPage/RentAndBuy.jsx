@@ -103,9 +103,23 @@ function RentAndBuy() {
                   <span className="text-[#EF8D2A]">{amount}</span>
                   <span className="text-black">/{unit}</span>
                 </p> */}
-                <button className="bg-black text-white px-12 py-1 mt-2 md:mt-0  cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
+                <button className="bg-black text-white px-8 py-1 mt-2 md:mt-0  cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
                 <a href="tel:+916283381082" className="flex gap-2 items-center">  Rental Now </a>
                 </button>
+
+                <button className="bg-black text-white px-8 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
+               <a
+              href="https://wa.me/916283381082"
+              target="_blank"
+             rel="noopener noreferrer"
+            className="flex gap-2 items-center"
+             >
+             Rental Now
+            </a>
+          </button>
+
+
+                
               </div>
             </div>
           );
