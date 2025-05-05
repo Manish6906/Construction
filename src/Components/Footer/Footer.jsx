@@ -5,6 +5,7 @@ import { FaArrowRight, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEn
 import { CiYoutube } from "react-icons/ci";
 import { Link } from 'react-scroll';
 import Logo1 from '../../assets/images/Logo1.png';
+import { FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -36,7 +37,8 @@ function Footer() {
           </h1>
 
           <a 
-            href="tel:+916283381082"
+          href="https://wa.me/916283381082"
+        target="_blank"
             className="flex items-center gap-2 px-6 py-2 bg-[#EF8D2A] hover:bg-[#e67e10] rounded transition-colors transform hover:scale-105"
           >
             Make Appointment <FaArrowRight />
@@ -99,8 +101,9 @@ function Footer() {
               </li>
               {['6283381082', '9780463277', '7837141321'].map((num, i) => (
                 <li key={i} className="flex items-center">
-                  <FaPhoneAlt className="mr-3" />
-                  <a href={`tel:+91${num}`} className="hover:text-[#EF8D2A]">+91 {num}</a>
+                  <FaWhatsapp  className="mr-3" />
+                  <a href={`https://wa.me/+91${num}`}
+        target="_blank" className="hover:text-[#EF8D2A]">+91 {num}</a>
                 </li>
               ))}
             </ul>
