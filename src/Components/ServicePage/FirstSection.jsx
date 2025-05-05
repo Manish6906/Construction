@@ -56,7 +56,7 @@ const Card = ({ image, title, text }) => (
     <img src={image} alt={title} className='w-full h-32 object-contain mb-4' />
     <h2 className='text-sm lg:text-xl font-bold mb-2'>{title}</h2>
     <p className='mb-3 md:mb-1 text-[10px] lg:text-sm'>{text}</p>
-    <div className="flex flex-col sm:flex-row justify-center md:justify-between gap-2 items-center mt-4">
+    <div className="flex flex-col lg:flex-row justify-center lg:justify-between gap-2 items-center mt-4">
                   <button className="bg-black text-white px-2 flex items-center gap-2 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
                    <IoIosCall />  <a href="tel:+916283381082" className="flex gap-2 items-center text-sm">Rental Now</a>
                   </button>
