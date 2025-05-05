@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import { IoIosCall } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
 
 import card1 from '../../assets/images/card1.png';
 import card2 from '../../assets/images/card2.png';
@@ -26,7 +28,7 @@ const cards = [
   {
     image: card4,
     title: 'Backhoe Loader',
-    text: 'Versatile and compact, perfect for lifting, and material handling in tight spaces. Ideal for small to medium-scale projects like landscaping and construction.',
+    text: 'Versatile and perfect for lifting, and material handling in tight spaces. Ideal  small projects landscaping  construction.',
   },
 ];
 
@@ -54,6 +56,24 @@ const Card = ({ image, title, text }) => (
     <img src={image} alt={title} className='w-full h-32 object-contain mb-4' />
     <h2 className='text-sm lg:text-xl font-bold mb-2'>{title}</h2>
     <p className='mb-3 md:mb-1 text-[10px] lg:text-sm'>{text}</p>
+    <div className="flex flex-col sm:flex-row justify-center md:justify-between gap-2 items-center mt-4">
+                  <button className="bg-black text-white px-2 flex items-center gap-2 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
+                   <IoIosCall />  <a href="tel:+916283381082" className="flex gap-2 items-center text-sm">Rental Now</a>
+                  </button>
+    
+                  <button className="bg-black flex items-center gap-2 text-white px-2 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
+                  <FaWhatsapp />
+      <a
+        href="https://wa.me/916283381082"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex gap-2 items-center text-sm"
+      >
+        Rental Now
+      </a>
+    </button>
+    
+                </div>
   </motion.div>
 );
 
