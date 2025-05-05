@@ -40,7 +40,7 @@ function SecondSection() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-black text-white py-2 px-8 rounded inline-flex items-center gap-2 hover:bg-gray-800 transition"
+                className="bg-black cursor-pointer text-white py-2 px-8 rounded inline-flex items-center gap-2 hover:bg-gray-800 transition"
               >
                 Learn More <ArrowRight size={18} />
               </motion.button>
