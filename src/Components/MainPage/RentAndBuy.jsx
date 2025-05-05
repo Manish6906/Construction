@@ -102,11 +102,11 @@ function RentAndBuy() {
             <p className="text-gray-600">{item.description}</p>
 
             <div className="flex flex-col sm:flex-row justify-center md:justify-between gap-2 items-center mt-4">
-              <button className="bg-black text-white px-4 flex items-center gap-2 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
-               <IoIosCall />  <a href="tel:+916283381082" className="flex gap-2 items-center">Rental Now</a>
+              <button className="bg-black text-white px-4 rounded-sm flex items-center gap-2 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
+               <IoIosCall />  <a href="tel:+916283381082" className="flex gap-2 items-center">Call Now</a>
               </button>
 
-              <button className="bg-black flex items-center gap-2 text-white px-4 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
+              <button className="bg-black flex items-center rounded-sm gap-2 text-white px-4 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
               <FaWhatsapp />
   <a
     href="https://wa.me/916283381082"
@@ -114,7 +114,7 @@ function RentAndBuy() {
     rel="noopener noreferrer"
     className="flex gap-2 items-center"
   >
-    Rental Now
+    Chat Now
   </a>
 </button>
 

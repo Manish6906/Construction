@@ -57,11 +57,11 @@ const Card = ({ image, title, text }) => (
     <h2 className='text-sm lg:text-xl font-bold mb-2'>{title}</h2>
     <p className='mb-3 md:mb-1 text-[10px] lg:text-sm'>{text}</p>
     <div className="flex flex-col lg:flex-row justify-center lg:justify-between gap-2 items-center mt-4">
-                  <button className="bg-black text-white px-2 flex items-center gap-2 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
-                   <IoIosCall />  <a href="tel:+916283381082" className="flex gap-2 items-center text-sm">Rental Now</a>
+                  <button className="bg-black text-white px-2 rounded-sm flex items-center gap-2 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
+                   <IoIosCall />  <a href="tel:+916283381082" className="flex gap-2 items-center text-sm">Call Now</a>
                   </button>
     
-                  <button className="bg-black flex items-center gap-2 text-white px-2 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
+                  <button className="bg-black flex items-center gap-2 rounded-sm text-white px-2 py-1 mt-2 md:mt-0 cursor-pointer shadow-lg hover:scale-110 transition-transform duration-200">
                   <FaWhatsapp />
       <a
         href="https://wa.me/916283381082"
@@ -69,7 +69,7 @@ const Card = ({ image, title, text }) => (
         rel="noopener noreferrer"
         className="flex gap-2 items-center text-sm"
       >
-        Rental Now
+        Chat Now
       </a>
     </button>
     
